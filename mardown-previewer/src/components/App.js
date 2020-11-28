@@ -1,3 +1,16 @@
-import './App.css';
+import React, { Component } from 'react';
+import Editor from './Editor';
+import Preview from './Preview';
 
-// export default App;
+class App extends Component {
+  render () {
+    return (
+      <div id="container">
+        <Editor />
+        <Preview />
+      </div>
+    );
+  }
+}
+
+export default App;
