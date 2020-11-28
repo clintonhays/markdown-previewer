@@ -6,3 +6,8 @@
   text-decoration: none;
   color: inherit;
 }
+
+@mixin monoItalic {
+  font-family: $monoRegular;
+  font-style: italic;
+}

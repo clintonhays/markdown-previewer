@@ -1,0 +1,17 @@
+//
+// - - - - - - - - - - Markdown Editor - - - - - - - - - - //
+//
+
+.container,
+#preview {
+  text-align: center;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.container {
+  textarea {
+    width: 90%;
+    overflow-wrap: break-word;
+  }
+}

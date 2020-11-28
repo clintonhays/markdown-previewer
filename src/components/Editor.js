@@ -15,8 +15,17 @@ class Editor extends Component {
   render () {
     return (
       <div className="container">
-        <textarea defaultValue={this.state.value} onChange={this.handleChange} id="editor" cols="30" rows="10" />
-
+        <h1>Markdown Editor</h1>
+        <textarea
+          defaultValue={this.state.value}
+          onChange={this.handleChange}
+          name="markdown-editor"
+          id="editor"
+          placeholder="Enter markdown to see a preview below."
+          cols="30"
+          rows="10"
+        />
+        <h2>Markdown Preview</h2>
         <Preview value={this.state.value} />
       </div>
     );
