@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Preview = (props) => {
+const Preview = (value) => {
   return (
     <div id="preview">
-      <p>This is the preview!</p>
+      <p>{value}</p>
     </div>
   );
 };
