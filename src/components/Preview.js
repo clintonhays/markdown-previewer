@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Preview = (value) => {
+const Preview = ({ value }) => {
   return (
     <div id="preview">
       <p>{value}</p>
