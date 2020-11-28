@@ -1,0 +1,8 @@
+//
+// - - - - - - - - - - Mixins - - - - - - - - - - //
+//
+
+@mixin link {
+  text-decoration: none;
+  color: inherit;
+}
