@@ -47,7 +47,7 @@ class Editor extends Component {
   render () {
     return (
       <div className="container">
-        <div className="text">
+        <div className="editor-container">
           <h1>Markdown Editor</h1>
           <textarea
             defaultValue={this.state.value}
@@ -59,7 +59,7 @@ class Editor extends Component {
             rows="10"
           />
         </div>
-        <div className="preview">
+        <div className="preview-container">
           <h1>Markdown Preview</h1>
           <Preview value={this.state.value} />
         </div>
