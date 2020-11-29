@@ -4,14 +4,64 @@
 
 .container,
 #preview {
-  text-align: center;
+  padding: 4px;
+  width: 100%;
   margin: 0 auto;
-  width: 500px;
-}
 
-.container {
   textarea {
     width: 90%;
-    overflow-wrap: break-word;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.text {
+  height: 290px;
+  background-color: $accentColor;
+  @include shadow;
+}
+
+.text,
+.preview {
+  h1 {
+    text-align: center;
+    border-bottom: 5px solid black;
+  }
+}
+
+//
+// - - - - - - - - - - Markdown Previewer - - - - - - - - - - //
+//
+
+.preview {
+  background-color: $accentColor;
+  @include shadow;
+}
+
+#preview {
+  font-weight: 500;
+  margin-bottom: 40px;
+
+  h1,
+  h2 {
+    text-align: left;
+    border: none;
+  }
+
+  code {
+    display: inline-block;
+    background-color: lightgray;
+  }
+
+  blockquote {
+    border-left: 3px solid black;
+
+    p {
+      margin-left: 3px;
+    }
+  }
+
+  img {
+    width: 50px;
   }
 }

@@ -1,7 +1,7 @@
 /* ============================================= */
 /*             Sub-Folder Imports                */
 /* ============================================= */
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,700;1,300;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,500;0,700;1,300;1,400;1,900&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -341,16 +341,76 @@ template {
   display: none;
 }
 
-.container,
-#preview {
-  text-align: center;
-  margin: 0 auto;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2b2b2b;
+}
+
+#root {
+  padding: 10px;
   width: 500px;
 }
 
-.container textarea {
+.container,
+#preview {
+  padding: 4px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container textarea,
+#preview textarea {
   width: 90%;
-  overflow-wrap: break-word;
+  display: block;
+  margin: 0 auto;
+}
+
+.text {
+  height: 290px;
+  background-color: #ffcf68;
+  box-shadow: 0px 5px 10px 0px rgba(255, 207, 104, 0.75);
+}
+
+.text h1,
+.preview h1 {
+  text-align: center;
+  border-bottom: 5px solid black;
+}
+
+.preview {
+  background-color: #ffcf68;
+  box-shadow: 0px 5px 10px 0px rgba(255, 207, 104, 0.75);
+}
+
+#preview {
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+#preview h1,
+#preview h2 {
+  text-align: left;
+  border: none;
+}
+
+#preview code {
+  display: inline-block;
+  background-color: lightgray;
+}
+
+#preview blockquote {
+  border-left: 3px solid black;
+}
+
+#preview blockquote p {
+  margin-left: 3px;
+}
+
+#preview img {
+  width: 50px;
 }
 
 body {
@@ -362,5 +422,34 @@ body {
 /* ============================================= */
 #editor {
   resize: none;
+}
+
+@media (min-width: 768px) {
+  #root {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #root {
+    width: 1024px;
+  }
+  .text,
+  .preview {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #root {
+    width: 1200px;
+  }
+}
+
+@media (min-width: 1500px) {
+  #root {
+    width: 1500px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
